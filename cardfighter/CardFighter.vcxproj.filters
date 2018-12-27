@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{b1c1a8d4-1f94-4cff-b728-c0e197399aed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\menu">
+      <UniqueIdentifier>{91948b1f-94f1-4ec1-83e9-3b4350538877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle">
+      <UniqueIdentifier>{059551b4-fbb7-474e-8396-9fbdffcccae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\window">
+      <UniqueIdentifier>{4f3497a3-c02c-4e02-a93d-2df1c1f32f4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\manager">
+      <UniqueIdentifier>{1d64b773-40a8-47fe-97ad-c13994bd3717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle\zones">
+      <UniqueIdentifier>{7287a1a5-bcc7-42e0-8dc6-8e2956da92e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle\cards">
+      <UniqueIdentifier>{7b0f587b-45ce-4d95-891e-d82a05a8a1e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle\cards\fist">
+      <UniqueIdentifier>{db5a6fec-b89e-4a77-9933-1639114b2e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle\effects">
+      <UniqueIdentifier>{c4dc5386-ddfb-46a6-8175-6b069f0195cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle\effects\common">
+      <UniqueIdentifier>{c88a5a9b-2eb8-4247-acd1-b8013aaaa00c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle\effects\fist">
+      <UniqueIdentifier>{3476700a-b6b2-4e9e-bf96-9e124ceb8bb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle\player">
+      <UniqueIdentifier>{3443b38e-7cb4-403b-b6a2-4584e90c7177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle\restrictions">
+      <UniqueIdentifier>{998ef5d9-528a-4e31-9036-0a257188d391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle\player\controller">
+      <UniqueIdentifier>{8624d7d5-8d24-4b91-b336-f939ecea2c21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Window.cpp">
+      <Filter>src\window</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>src\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>src\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceUser.cpp">
+      <Filter>src\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ACard.cpp">
+      <Filter>src\battle\cards</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>src\battle\cards</Filter>
+    </ClCompile>
+    <ClCompile Include="DCard.cpp">
+      <Filter>src\battle\cards</Filter>
+    </ClCompile>
+    <ClCompile Include="ICard.cpp">
+      <Filter>src\battle\cards</Filter>
+    </ClCompile>
+    <ClCompile Include="Deck.cpp">
+      <Filter>src\battle\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="Discard.cpp">
+      <Filter>src\battle\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="Hand.cpp">
+      <Filter>src\battle\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayZone.cpp">
+      <Filter>src\battle\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="Zone.cpp">
+      <Filter>src\battle\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawInvoker.cpp">
+      <Filter>src\window</Filter>
+    </ClCompile>
+    <ClCompile Include="Battle.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="AZone.cpp">
+      <Filter>src\battle\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="DZone.cpp">
+      <Filter>src\battle\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="IZone.cpp">
+      <Filter>src\battle\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Damage.cpp">
+      <Filter>src\battle\effects\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Heal.cpp">
+      <Filter>src\battle\effects\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Untap.cpp">
+      <Filter>src\battle\effects\fist</Filter>
+    </ClCompile>
+    <ClCompile Include="ModifyCooldown.cpp">
+      <Filter>src\battle\effects\common</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>src\battle\player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerStats.cpp">
+      <Filter>src\battle\player</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonFist.cpp">
+      <Filter>src\battle\cards\fist</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerAction.cpp">
+      <Filter>src\battle\player</Filter>
+    </ClCompile>
+    <ClCompile Include="NoRestriction.cpp">
+      <Filter>src\battle\restrictions</Filter>
+    </ClCompile>
+    <ClCompile Include="WeaponCategoryRestriction.cpp">
+      <Filter>src\battle\restrictions</Filter>
+    </ClCompile>
+    <ClCompile Include="RestrictionStrategy.cpp">
+      <Filter>src\battle\restrictions</Filter>
+    </ClCompile>
+    <ClCompile Include="Restriction.cpp">
+      <Filter>src\battle\restrictions</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>src\battle\effects\common</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCard.cpp">
+      <Filter>src\battle\effects\common</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMouseController.cpp">
+      <Filter>src\battle\player\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="DIAZone.cpp">
+      <Filter>src\battle\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="InputMaster.cpp">
+      <Filter>src\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>src\battle\player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window.h">
+      <Filter>src\window</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>src\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="InputObserver.h">
+      <Filter>src\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>src\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceUser.h">
+      <Filter>src\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Battle.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Deck.h">
+      <Filter>src\battle\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="Hand.h">
+      <Filter>src\battle\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="Discard.h">
+      <Filter>src\battle\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="Zone.h">
+      <Filter>src\battle\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>src\battle\cards</Filter>
+    </ClInclude>
+    <ClInclude Include="ACard.h">
+      <Filter>src\battle\cards</Filter>
+    </ClInclude>
+    <ClInclude Include="DCard.h">
+      <Filter>src\battle\cards</Filter>
+    </ClInclude>
+    <ClInclude Include="ICard.h">
+      <Filter>src\battle\cards</Filter>
+    </ClInclude>
+    <ClInclude Include="AZone.h">
+      <Filter>src\battle\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="DZone.h">
+      <Filter>src\battle\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="IZone.h">
+      <Filter>src\battle\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayZone.h">
+      <Filter>src\battle\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawInvoker.h">
+      <Filter>src\window</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>src\battle\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Damage.h">
+      <Filter>src\battle\effects\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Heal.h">
+      <Filter>src\battle\effects\common</Filter>
+    </ClInclude>
+    <ClInclude Include="Untap.h">
+      <Filter>src\battle\effects\fist</Filter>
+    </ClInclude>
+    <ClInclude Include="ModifyCooldown.h">
+      <Filter>src\battle\effects\common</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonFist.h">
+      <Filter>src\battle\cards\fist</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>src\battle\player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerAvatar.h">
+      <Filter>src\battle\player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerStats.h">
+      <Filter>src\battle\player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerAction.h">
+      <Filter>src\battle\player</Filter>
+    </ClInclude>
+    <ClInclude Include="Restriction.h">
+      <Filter>src\battle\restrictions</Filter>
+    </ClInclude>
+    <ClInclude Include="RestrictionStrategy.h">
+      <Filter>src\battle\restrictions</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponCategoryRestriction.h">
+      <Filter>src\battle\restrictions</Filter>
+    </ClInclude>
+    <ClInclude Include="NoRestriction.h">
+      <Filter>src\battle\restrictions</Filter>
+    </ClInclude>
+    <ClInclude Include="DIAZone.h">
+      <Filter>src\battle\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>src\battle\effects\common</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCard.h">
+      <Filter>src\battle\effects\common</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMouseController.h">
+      <Filter>src\battle\player\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="InputMaster.h">
+      <Filter>src\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>src\battle\player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{EB303EC1-5EC4-4DCE-9FFB-24195BF484A2}</ProjectGuid>
+    <RootNamespace>CardFighter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>CardFighter</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:/SFML/include;C:/prgr/catch/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/SFML/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:/SFML/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:/SFML/include</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d;sfml-graphics-d;sfml-window-d;sfml-system-d;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:/SFML/include;C:/prgr/catch/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/SFML/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:/SFML/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:/SFML/include</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d;sfml-graphics-d;sfml-window-d;sfml-system-d;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ACard.h" />
+    <ClInclude Include="AZone.h" />
+    <ClInclude Include="Battle.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="CommonFist.h" />
+    <ClInclude Include="Damage.h" />
+    <ClInclude Include="DCard.h" />
+    <ClInclude Include="Deck.h" />
+    <ClInclude Include="DIAZone.h" />
+    <ClInclude Include="Discard.h" />
+    <ClInclude Include="DrawCard.h" />
+    <ClInclude Include="DrawInvoker.h" />
+    <ClInclude Include="DZone.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="Hand.h" />
+    <ClInclude Include="Heal.h" />
+    <ClInclude Include="ICard.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="InputMaster.h" />
+    <ClInclude Include="InputObserver.h" />
+    <ClInclude Include="IZone.h" />
+    <ClInclude Include="NoRestriction.h" />
+    <ClInclude Include="PlayerAction.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="PlayerMouseController.h" />
+    <ClInclude Include="PlayerStats.h" />
+    <ClInclude Include="PlayZone.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerAvatar.h" />
+    <ClInclude Include="ModifyCooldown.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="ResourceUser.h" />
+    <ClInclude Include="Restriction.h" />
+    <ClInclude Include="RestrictionStrategy.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="Untap.h" />
+    <ClInclude Include="WeaponCategoryRestriction.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="Zone.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ACard.cpp" />
+    <ClCompile Include="AZone.cpp" />
+    <ClCompile Include="Battle.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="CommonFist.cpp" />
+    <ClCompile Include="Damage.cpp" />
+    <ClCompile Include="DCard.cpp" />
+    <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="DIAZone.cpp" />
+    <ClCompile Include="Discard.cpp" />
+    <ClCompile Include="DrawCard.cpp" />
+    <ClCompile Include="DrawInvoker.cpp" />
+    <ClCompile Include="DZone.cpp" />
+    <ClCompile Include="Hand.cpp" />
+    <ClCompile Include="Heal.cpp" />
+    <ClCompile Include="ICard.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="InputMaster.cpp" />
+    <ClCompile Include="IZone.cpp" />
+    <ClCompile Include="ModifyCooldown.cpp" />
+    <ClCompile Include="NoRestriction.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerAction.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
+    <ClCompile Include="PlayerMouseController.cpp" />
+    <ClCompile Include="PlayerStats.cpp" />
+    <ClCompile Include="PlayZone.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="ResourceUser.cpp" />
+    <ClCompile Include="Restriction.cpp" />
+    <ClCompile Include="RestrictionStrategy.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="Untap.cpp" />
+    <ClCompile Include="WeaponCategoryRestriction.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Zone.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
